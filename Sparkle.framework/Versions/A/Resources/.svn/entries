@@ -1,0 +1,108 @@
+8
+
+dir
+6
+http://fluxforge@angel1.projectlocker.com/fluxforge/SearchIt/svn/trunk/Sparkle.framework/Versions/A/Resources
+http://fluxforge@angel1.projectlocker.com/fluxforge/SearchIt/svn
+
+
+
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+
+
+svn:special svn:externals svn:needs-lock
+
+fr_CA.lproj
+file
+
+
+
+
+2008-08-26T11:16:40.000000Z
+311cbb2db8ac6a8db4e01bacdb18e5e7
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+has-props
+
+
+svn:special
+
+License.txt
+file
+
+
+
+
+2008-08-13T18:20:34.000000Z
+29284fe742e0698808c766d3384bf6c1
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+
+it.lproj
+dir
+
+relaunch
+file
+
+
+
+
+2008-08-13T18:20:34.000000Z
+a50575564d38756ef5ae918002e1eca6
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+has-props
+
+SUModelTranslation.plist
+file
+
+
+
+
+2008-08-13T18:20:34.000000Z
+f1ea04fe15a18d331dd1cde62aee3953
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+
+SUStatus.nib
+dir
+
+Info.plist
+file
+
+
+
+
+2008-08-13T18:50:02.000000Z
+062beb31867cdf72268bc989b3757e12
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+
+en.lproj
+dir
+
+ru.lproj
+dir
+
+es.lproj
+dir
+
+fr.lproj
+dir
+
+de.lproj
+dir
+
+sv.lproj
+dir
+
+nl.lproj
+dir
+

@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the 'Search It' target in the 'Search It' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+
+#define ENTER_TAG 1
+#define COMMAND_ENTER_TAG 2
+#define SHIFT_ENTER_TAG 3
+//#define OPTION_ENTER_TAG 4
+
+
+#define GOOGLE_TAG 1
+#define WIKIPEDIA_TAG 2
+#define YAHOO_TAG 3
+#define OPENASURL_TAG 4
+
+//#define DEBUG 1
+#endif

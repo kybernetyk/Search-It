@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Apple Developer Connection</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Developer Connection</string>
+		<key>url</key>
+		<string>http://developer.apple.com</string>
+		<key>defaultlocale</key>
+		<string>english</string>
+		<key>locales</key>
+		<dict>
+			<key>english</key>
+			<string>http://developer.apple.com/search.php?q=$keyword</string>
+		</dict>
+	</dict>
+	<key>Cocoabuilder</key>
+	<dict>
+		<key>name</key>
+		<string>Cocoabuilder Archive</string>
+		<key>url</key>
+		<string>http://www.cocoabuilder.com</string>
+		<key>defaultlocale</key>
+		<string>English</string>
+		<key>locales</key>
+		<dict>
+			<key>English</key>
+			<string>http://www.cocoabuilder.com/search/archive/cocoa?words=$keyword</string>
+		</dict>
+	</dict>
+	<key>Dict.cc</key>
+	<dict>
+		<key>name</key>
+		<string>Dict.cc</string>
+		<key>url</key>
+		<string>http://dict.cc</string>
+		<key>defaultlocale</key>
+		<string>english &lt;-&gt; german</string>
+		<key>locales</key>
+		<dict>
+			<key>english &lt;-&gt; german</key>
+			<string>http://www.dict.cc/$keyword</string>
+		</dict>
+	</dict>
+	<key>Google</key>
+	<dict>
+		<key>name</key>
+		<string>Google</string>
+		<key>url</key>
+		<string>http://www.google.com</string>
+		<key>defaultlocale</key>
+		<string>English Global</string>
+		<key>locales</key>
+		<dict>
+			<key>English Global</key>
+			<string>http://www.google.com/search?q=$keyword</string>
+			<key>United States of America</key>
+			<string>http://www.google.com/search?q=$keyword</string>
+			<key>Google.com</key>
+			<string>http://www.google.com/search?q=$keyword</string>
+			<key>American Samoa</key>
+			<string>http://www.google.as/search?q=$keyword</string>
+			<key>Anguilla</key>
+			<string>http://www.google.off.ai/search?q=$keyword</string>
+			<key>Antigua and Barbuda</key>
+			<string>http://www.google.com.ag/search?q=$keyword</string>
+			<key>Argentina</key>
+			<string>http://www.google.com.ar/search?q=$keyword</string>
+			<key>Australia</key>
+			<string>http://www.google.com.au/search?q=$keyword</string>
+			<key>Austria</key>
+			<string>http://www.google.at/search?q=$keyword</string>
+			<key>Azerbaijan</key>
+			<string>http://www.google.az/search?q=$keyword</string>
+			<key>Belgium</key>
+			<string>http://www.google.be/search?q=$keyword</string>
+			<key>Brazil</key>
+			<string>http://www.google.com.br/search?q=$keyword</string>
+			<key>British Virgin Islands</key>
+			<string>http://www.google.vg/search?q=$keyword</string>
+			<key>Burundi</key>
+			<string>http://www.google.bi/search?q=$keyword</string>
+			<key>Canada</key>
+			<string>http://www.google.ca/search?q=$keyword</string>
+			<key>Chad</key>
+			<string>http://www.google.td/search?q=$keyword</string>
+			<key>Chile</key>
+			<string>http://www.google.cl/search?q=$keyword</string>
+			<key>Colombia</key>
+			<string>http://www.google.com.co/search?q=$keyword</string>
+			<key>Costa Rica</key>
+			<string>http://www.google.co.cr/search?q=$keyword</string>
+			<key>Cte d&apos;Ivoire</key>
+			<string>http://www.google.ci/search?q=$keyword</string>
+			<key>Cuba</key>
+			<string>http://www.google.com.cu/search?q=$keyword</string>
+			<key>Czech Republic</key>
+			<string>http://www.google.cz/search?q=$keyword</string>
+			<key>Dem. Rep. of the Congo</key>
+			<string>http://www.google.cd/search?q=$keyword</string>
+			<key>Denmark</key>
+			<string>http://www.google.dk/search?q=$keyword</string>
+			<key>Djibouti</key>
+			<string>http://www.google.dj/search?q=$keyword</string>
+			<key>Dominican Republic</key>
+			<string>http://www.google.com.do/search?q=$keyword</string>
+			<key>Ecuador</key>
+			<string>http://www.google.com.ec/search?q=$keyword</string>
+			<key>El Salvador</key>
+			<string>http://www.google.com.sv/search?q=$keyword</string>
+			<key>Federated States of Micronesia</key>
+			<string>http://www.google.fm/search?q=$keyword</string>
+			<key>Fiji</key>
+			<string>http://www.google.com.fj/search?q=$keyword</string>
+			<key>Finland</key>
+			<string>http://www.google.fi/search?q=$keyword</string>
+			<key>France</key>
+			<string>http://www.google.fr/search?q=$keyword</string>
+			<key>Georgia</key>
+			<string>http://www.google.ge/search?q=$keyword</string>
+			<key>Germany</key>
+			<string>http://www.google.de/search?q=$keyword</string>
+			<key>Gibraltar</key>
+			<string>http://www.google.com.gi/search?q=$keyword</string>
+			<key>Greece</key>
+			<string>http://www.google.com.gr/search?q=$keyword</string>
+			<key>Greenland</key>
+			<string>http://www.google.gl/search?q=$keyword</string>
+			<key>Guernsey</key>
+			<string>http://www.google.gg/search?q=$keyword</string>
+			<key>Honduras</key>
+			<string>http://www.google.hn/search?q=$keyword</string>
+			<key>Hong Kong</key>
+			<string>http://www.google.com.hk/search?q=$keyword</string>
+			<key>Hungary</key>
+			<string>http://www.google.co.hu/search?q=$keyword</string>
+			<key>India</key>
+			<string>http://www.google.co.in/search?q=$keyword</string>
+			<key>Ireland</key>
+			<string>http://www.google.ie/search?q=$keyword</string>
+			<key>Isle of Man</key>
+			<string>http://www.google.co.im/search?q=$keyword</string>
+			<key>Israel</key>
+			<string>http://www.google.co.il/search?q=$keyword</string>
+			<key>Italy</key>
+			<string>http://www.google.it/search?q=$keyword</string>
+			<key>Jamaica</key>
+			<string>http://www.google.com.jm/search?q=$keyword</string>
+			<key>Japan</key>
+			<string>http://www.google.co.jp/search?q=$keyword</string>
+			<key>Jersey</key>
+			<string>http://www.google.co.je/search?q=$keyword</string>
+			<key>Kazakhstan</key>
+			<string>http://www.google.kz/search?q=$keyword</string>
+			<key>Korea</key>
+			<string>http://www.google.co.kr/search?q=$keyword</string>
+			<key>Latvia</key>
+			<string>http://www.google.lv/search?q=$keyword</string>
+			<key>Lesotho</key>
+			<string>http://www.google.co.ls/search?q=$keyword</string>
+			<key>Liechtenstein</key>
+			<string>http://www.google.li/search?q=$keyword</string>
+			<key>Lithuania</key>
+			<string>http://www.google.lt/search?q=$keyword</string>
+			<key>Luxembourg</key>
+			<string>http://www.google.lu/search?q=$keyword</string>
+			<key>Malawi</key>
+			<string>http://www.google.mw/search?q=$keyword</string>
+			<key>Malaysia</key>
+			<string>http://www.google.com.my/search?q=$keyword</string>
+			<key>Malta</key>
+			<string>http://www.google.com.mt/search?q=$keyword</string>
+			<key>Mauritius</key>
+			<string>http://www.google.mu/search?q=$keyword</string>
+			<key>Montserrat</key>
+			<string>http://www.google.ms/search?q=$keyword</string>
+			<key>Mxico</key>
+			<string>http://www.google.com.mx/search?q=$keyword</string>
+			<key>Namibia</key>
+			<string>http://www.google.com.na/search?q=$keyword</string>
+			<key>Nepal</key>
+			<string>http://www.google.com.np/search?q=$keyword</string>
+			<key>Netherlands</key>
+			<string>http://www.google.nl/search?q=$keyword</string>
+			<key>New Zealand</key>
+			<string>http://www.google.co.nz/search?q=$keyword</string>
+			<key>Nicaragua</key>
+			<string>http://www.google.com.ni/search?q=$keyword</string>
+			<key>Norfolk Island</key>
+			<string>http://www.google.com.nf/search?q=$keyword</string>
+			<key>Pakistan</key>
+			<string>http://www.google.com.pk/search?q=$keyword</string>
+			<key>Panam</key>
+			<string>http://www.google.com.pa/search?q=$keyword</string>
+			<key>Paraguay</key>
+			<string>http://www.google.com.py/search?q=$keyword</string>
+			<key>Per</key>
+			<string>http://www.google.com.pe/search?q=$keyword</string>
+			<key>Philippines</key>
+			<string>http://www.google.com.ph/search?q=$keyword</string>
+			<key>Pitcairn Islands</key>
+			<string>http://www.google.pn/search?q=$keyword</string>
+			<key>Poland</key>
+			<string>http://www.google.pl/search?q=$keyword</string>
+			<key>Portugal</key>
+			<string>http://www.google.pt/search?q=$keyword</string>
+			<key>Puerto Rico</key>
+			<string>http://www.google.com.pr/search?q=$keyword</string>
+			<key>Rep. of the Congo</key>
+			<string>http://www.google.cg/search?q=$keyword</string>
+			<key>Romania</key>
+			<string>http://www.google.ro/search?q=$keyword</string>
+			<key>Russia</key>
+			<string>http://www.google.ru/search?q=$keyword</string>
+			<key>Rwanda</key>
+			<string>http://www.google.rw/search?q=$keyword</string>
+			<key>Saint Helena</key>
+			<string>http://www.google.sh/search?q=$keyword</string>
+			<key>San Marino</key>
+			<string>http://www.google.sm/search?q=$keyword</string>
+			<key>Singapore</key>
+			<string>http://www.google.com.sg/search?q=$keyword</string>
+			<key>Slovakia</key>
+			<string>http://www.google.sk/search?q=$keyword</string>
+			<key>South Africa</key>
+			<string>http://www.google.co.za/search?q=$keyword</string>
+			<key>Spain</key>
+			<string>http://www.google.es/search?q=$keyword</string>
+			<key>Sweden</key>
+			<string>http://www.google.se/search?q=$keyword</string>
+			<key>Switzerland</key>
+			<string>http://www.google.ch/search?q=$keyword</string>
+			<key>Taiwan</key>
+			<string>http://www.google.com.tw/search?q=$keyword</string>
+			<key>Thailand</key>
+			<string>http://www.google.co.th/search?q=$keyword</string>
+			<key>The Gambia</key>
+			<string>http://www.google.gm/search?q=$keyword</string>
+			<key>Trinidad and Tobago</key>
+			<string>http://www.google.tt/search?q=$keyword</string>
+			<key>Turkey</key>
+			<string>http://www.google.com.tr/search?q=$keyword</string>
+			<key>Ukraine</key>
+			<string>http://www.google.com.ua/search?q=$keyword</string>
+			<key>United Arab Emirates</key>
+			<string>http://www.google.ae/search?q=$keyword</string>
+			<key>United Kingdom</key>
+			<string>http://www.google.co.uk/search?q=$keyword</string>
+			<key>Uruguay</key>
+			<string>http://www.google.com.uy/search?q=$keyword</string>
+			<key>Uzbekistan</key>
+			<string>http://www.google.uz/search?q=$keyword</string>
+			<key>Vanuatu</key>
+			<string>http://www.google.vu/search?q=$keyword</string>
+			<key>Venezuela</key>
+			<string>http://www.google.co.ve/search?q=$keyword</string>
+			<key>Vietnam</key>
+			<string>http://www.google.com.vn/search?q=$keyword</string>
+		</dict>
+	</dict>
+	<key>IMDB</key>
+	<dict>
+		<key>name</key>
+		<string>Internet Movie Data Base</string>
+		<key>url</key>
+		<string>http://www.imdb.com</string>
+		<key>defaultlocale</key>
+		<string>International</string>
+		<key>locales</key>
+		<dict>
+			<key>Germany</key>
+			<string>http://www.imdb.de/find?s=all&amp;q=$keyword</string>
+			<key>International</key>
+			<string>http://www.imdb.com/find?s=all&amp;q=$keyword</string>
+			<key>UK</key>
+			<string>http://uk.imdb.com/find?s=all&amp;q=$keyword</string>
+			<key>USA</key>
+			<string>http://us.imdb.com/find?s=all&amp;q=$keyword</string>
+		</dict>
+	</dict>
+	<key>Open As URL</key>
+	<dict>
+		<key>name</key>
+		<string>Open Input As URL</string>
+		<key>url</key>
+		<string>http://yourMac.com</string>
+		<key>defaultlocale</key>
+		<string>universal</string>
+		<key>locales</key>
+		<dict>
+			<key>universal</key>
+			<string>http://$keyword</string>
+		</dict>
+	</dict>
+	<key>Wikipedia</key>
+	<dict>
+		<key>name</key>
+		<string>Wikipedia</string>
+		<key>url</key>
+		<string>http://www.wikipedia.org</string>
+		<key>defaultlocale</key>
+		<string>english</string>
+		<key>locales</key>
+		<dict>
+			<key>chinese (zh)</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=zh</string>
+			<key>czech</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=cs</string>
+			<key>dutch</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=nl</string>
+			<key>english</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=en</string>
+			<key>french</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=fr</string>
+			<key>korean</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=ko</string>
+			<key>german</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=de</string>
+			<key>italian</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=it</string>
+			<key>japanese</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=ja</string>
+			<key>polish</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=pl</string>
+			<key>portuguese</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=pt</string>
+			<key>russian</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=ru</string>
+			<key>spanish</key>
+			<string>http://www.wikipedia.org/search-redirect.php?search=$keyword&amp;language=es</string>
+		</dict>
+	</dict>
+	<key>WoW Head</key>
+	<dict>
+		<key>name</key>
+		<string>WoW Head</string>
+		<key>url</key>
+		<string>http://www.wowhead.com</string>
+		<key>defaultlocale</key>
+		<string>english</string>
+		<key>locales</key>
+		<dict>
+			<key>english</key>
+			<string>http://www.wowhead.com/?search=$keyword</string>
+		</dict>
+	</dict>
+	<key>WoW Wiki</key>
+	<dict>
+		<key>name</key>
+		<string>WoW Wiki</string>
+		<key>url</key>
+		<string>http://www.wowwiki.com</string>
+		<key>defaultlocale</key>
+		<string>english</string>
+		<key>locales</key>
+		<dict>
+			<key>english</key>
+			<string>http://en.wow.wikia.com/wiki/Special:Search?search=$keyword</string>
+			<key>german</key>
+			<string>http://de.wow.wikia.com/wiki/Spezial:Suche?search=$keyword</string>
+		</dict>
+	</dict>
+	<key>Yahoo!</key>
+	<dict>
+		<key>name</key>
+		<string>Yahoo!</string>
+		<key>url</key>
+		<string>http://www.yahoo.com</string>
+		<key>defaultlocale</key>
+		<string>english</string>
+		<key>locales</key>
+		<dict>
+			<key>english</key>
+			<string>http://search.yahoo.com/search?p=$keyword</string>
+			<key>german</key>
+			<string>http://de.search.yahoo.com/search?p=$keyword</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,53 @@
+8
+
+dir
+5
+http://fluxforge@angel1.projectlocker.com/fluxforge/SearchIt/svn/trunk/English.lproj
+http://fluxforge@angel1.projectlocker.com/fluxforge/SearchIt/svn
+
+
+
+2008-08-21T21:44:31.263182Z
+1
+fluxforge
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+90ae9d60-6c98-412f-9688-d0ad57bde201
+
+InfoPlist.strings
+file
+
+
+
+
+2008-08-22T19:48:25.000000Z
+51ef59b60e5b41b91519cc662a9fe886
+2008-08-21T21:44:31.263182Z
+1
+fluxforge
+has-props
+
+MainMenu.xib
+file
+6
+
+
+
+2008-08-26T12:16:34.000000Z
+865bd53dff196ed47c1ea0d5d0f3793b
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+

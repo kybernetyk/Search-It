@@ -1,0 +1,76 @@
+8
+
+dir
+6
+http://fluxforge@angel1.projectlocker.com/fluxforge/SearchIt/svn/trunk/Sparkle.framework/Versions/A/Headers
+http://fluxforge@angel1.projectlocker.com/fluxforge/SearchIt/svn
+
+
+
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+
+
+svn:special svn:externals svn:needs-lock
+
+SUVersionComparisonProtocol.h
+file
+
+
+
+
+2008-08-13T18:20:32.000000Z
+d9cde121be87cf7beda2f9a47aaf47d7
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+
+SUUpdater.h
+file
+
+
+
+
+2008-08-13T18:20:32.000000Z
+d6d80eb9c349776a96247cf4f4a03ece
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+
+Sparkle.h
+file
+
+
+
+
+2008-08-13T18:20:32.000000Z
+fab93e9ad6d3f48020f723097f30aa89
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+
+SUAppcastItem.h
+file
+
+
+
+
+2008-08-13T18:20:32.000000Z
+a1e94c9fc7ae3540d1ef1312442492bc
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+
+SUAppcast.h
+file
+
+
+
+
+2008-08-13T18:20:32.000000Z
+4dd85ce247281308c84ec1ed0d643d21
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+

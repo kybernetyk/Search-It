@@ -1,0 +1,53 @@
+8
+
+dir
+6
+http://fluxforge@angel1.projectlocker.com/fluxforge/SearchIt/svn/trunk/Sparkle.framework/Versions/A/Resources/en.lproj/SUUpdateAlert.nib
+http://fluxforge@angel1.projectlocker.com/fluxforge/SearchIt/svn
+
+
+
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+
+
+svn:special svn:externals svn:needs-lock
+
+info.nib
+file
+
+
+
+
+2008-08-13T18:20:34.000000Z
+48b1903871171c3dd5d1f313dd03f02b
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+
+keyedobjects.nib
+file
+
+
+
+
+2008-08-13T18:20:34.000000Z
+c45aa885cb4e81fd0bb6b5649e2a22ce
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+has-props
+
+classes.nib
+file
+
+
+
+
+2008-08-13T18:20:34.000000Z
+c137beae670f04fa9f87968d627d2a23
+2008-08-26T12:47:09.236666Z
+6
+fluxforge
+
