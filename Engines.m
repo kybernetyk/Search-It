@@ -208,6 +208,11 @@ static Engines *sharedEngines = nil;
 	NSMutableString *searchURLString = [NSMutableString stringWithString: searchTemplate];
 	if (searchURLString == nil)
 		return;
+	//keyword = [keyword stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]; 
+	NSMutableString *mutablekeyword = [NSMutableString stringWithString: keyword];
+	[mutablekeyword replaceOccurrencesOfString:@"+" withString:@"+%2B+" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutablekeyword length])];
+	[mutablekeyword replaceOccurrencesOfString:@" " withString:@"+" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutablekeyword length])];
+	keyword = [NSString stringWithString: mutablekeyword];
 	
 	[searchURLString replaceOccurrencesOfString:@"$keyword" withString: keyword options: NSCaseInsensitiveSearch range: NSMakeRange(0, [searchURLString length])];
 

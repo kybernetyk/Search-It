@@ -138,5 +138,29 @@
 #endif
 }
 
+- (void) highlightModifier: (int) modifier
+{
+	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+	NSString *shiftEngine = [userDefaults stringForKey:@"shiftEnterSearchEngine"];
+	NSString *commandEngine = [userDefaults stringForKey:@"commandEnterSearchEngine"];
+	NSString *standardEngine = [userDefaults stringForKey:@"enterSearchEngine"];
+	
+	//NSLog(@"highlighting: %i",modifier);
+	
+	if (modifier == 0)
+	{
+		[actionButton setTitle: standardEngine];
+	}
+	if (modifier == 1)
+	{
+		[actionButton setTitle: commandEngine];
+	}
+	if (modifier == 2)
+	{
+		[actionButton setTitle: shiftEngine];
+	}
+	
+}
+
 
 @end

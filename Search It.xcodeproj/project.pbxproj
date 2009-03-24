@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03E77C080F78FCFC00E08BE1 /* MainPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E77C070F78FCFC00E08BE1 /* MainPanel.m */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -44,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03E77C060F78FCFC00E08BE1 /* MainPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPanel.h; sourceTree = "<group>"; };
+		03E77C070F78FCFC00E08BE1 /* MainPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPanel.m; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -107,6 +110,8 @@
 				EFA902770E5CDB4D00CA129A /* SearchWindowController.m */,
 				EFAC0D1D0EE47EDE004F88EA /* Engines.h */,
 				EFAC0D1E0EE47EDE004F88EA /* Engines.m */,
+				03E77C060F78FCFC00E08BE1 /* MainPanel.h */,
+				03E77C070F78FCFC00E08BE1 /* MainPanel.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				EF15000A0E5EC4220067BCD3 /* SearchItPrefsWindowController.m in Sources */,
 				EF81474F0E5F375C00DA3BC2 /* KeyWellButton.m in Sources */,
 				EFAC0D1F0EE47EDE004F88EA /* Engines.m in Sources */,
+				03E77C080F78FCFC00E08BE1 /* MainPanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

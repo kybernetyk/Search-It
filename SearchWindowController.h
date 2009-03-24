@@ -12,6 +12,7 @@
 @interface SearchWindowController : NSWindowController 
 {
 	IBOutlet NSTextField *searchField;
+	IBOutlet NSButton *actionButton;
 }
 
 @property (readonly) NSTextField *searchField;
@@ -22,5 +23,7 @@
 
 
 - (void) executeSearchWithEngine: (NSString *) name andLocale: (NSString *) locale;
+
+- (void) highlightModifier: (int) modifier;
 
 @end

@@ -382,6 +382,7 @@ OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,	 voi
 	if ([self lastSearchTerm] != nil)
 		[[searchWindowController searchField] setStringValue: [self lastSearchTerm]];
 	
+	[searchWindowController highlightModifier: 0];
 
 	//don't show the window when
 	//the app just started
