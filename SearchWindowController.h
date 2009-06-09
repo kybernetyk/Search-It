@@ -20,7 +20,7 @@
 - (IBAction) executeEnterSearch : (id) sender;
 - (IBAction) executeCommandEnterSearch : (id) sender;
 - (IBAction) executeShiftEnterSearch : (id) sender;
-
+- (IBAction) openPreferences : (id) sender;
 
 - (void) executeSearchWithEngine: (NSString *) name andLocale: (NSString *) locale;
 

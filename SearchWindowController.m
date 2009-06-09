@@ -14,6 +14,12 @@
 
 @synthesize searchField;
 
+- (IBAction) openPreferences : (id) sender
+{
+	AppDelegate *appDelegate = (AppDelegate*)[NSApp delegate];
+	[appDelegate openPreferences: self];
+}
+
 - (void)windowWillClose:(NSNotification *)notification
 {
 #ifdef DEBUG

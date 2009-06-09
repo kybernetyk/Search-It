@@ -20,6 +20,8 @@
 	
 
 	EventHotKeyRef gMyHotKeyRef;
+	
+	NSStatusItem *statusIcon;
 }
 
 @property (readwrite, assign) BOOL isWindowOpen;
@@ -35,6 +37,10 @@
 
 -(void)addAppToLoginItems;
 -(void)removeAppFromLoginItems;
+
+
+- (void) createMenuBarIcon;
+- (void) removeMenuBarIcon;
 
 - (IBAction) openNewWindow : (id) sender;
 

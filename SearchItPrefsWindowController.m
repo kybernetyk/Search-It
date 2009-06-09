@@ -21,6 +21,19 @@
 
 }
 
+- (IBAction) menuBarIconSettingsChanged: (id) sender
+{
+	AppDelegate *appDelegate = (AppDelegate*)[NSApp delegate];
+	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+	BOOL addToMenubar = [userDefaults boolForKey:@"shouldAddToMenubar"];
+
+	if (addToMenubar)
+		[appDelegate createMenuBarIcon];
+	else
+		[appDelegate removeMenuBarIcon];
+	
+}
+
 - (IBAction)showWindow:(id)sender 
 {
 	// This forces the resources in the nib to load.

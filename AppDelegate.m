@@ -92,6 +92,8 @@
 	BOOL addToLoginItems = [userDefaults boolForKey:@"shouldAddToLoginItems"];
 	showWelcomeAlert = [userDefaults boolForKey:@"showWelcomeBox"];
 	
+	
+	
 	if (showWelcomeAlert == YES)
 		[userDefaults setBool: NO forKey:@"showWelcomeBox"];
 
@@ -132,6 +134,7 @@
 								 [[Engines sharedInstance] defaultLocalForEngine: @"Open As URL"],@"shiftEnterLanguage",
 								 
 								 @"1",@"shouldAddToLoginItems",
+								 @"1",@"shouldAddToMenubar",
 								 nil,@"licenceData",
 								 
 								 
@@ -211,6 +214,52 @@ OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,	 voi
 	UnregisterEventHotKey(gMyHotKeyRef);
 }
 
+- (void) createMenuBarIcon
+{
+	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+	BOOL addToMenubar = [userDefaults boolForKey:@"shouldAddToMenubar"];
+	
+	if (addToMenubar)
+	{
+		NSMenu *menu = [[[NSMenu alloc] initWithTitle:@"menu title"] autorelease];
+		
+		NSMenuItem *menuItem = [[[NSMenuItem alloc] initWithTitle:@"Open Search" action:@selector(reopenWindowByMenu:) keyEquivalent:[NSString string]] autorelease];
+		[menu addItem: menuItem];
+		menuItem = [[[NSMenuItem alloc] initWithTitle:@"Preferences" action:@selector(openPreferences:) keyEquivalent:[NSString string]] autorelease];
+		[menu addItem: menuItem];
+		[menu addItem:[NSMenuItem separatorItem]];
+		
+		[menu addItemWithTitle:@"Quit" action:@selector(quitAppByMenu:) keyEquivalent:[NSString string]];
+		
+		
+	
+		NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
+		
+		statusIcon = [statusBar statusItemWithLength: 24.0f];
+		[statusIcon setTitle:@"s!"];
+		[statusIcon setEnabled: YES];
+		[statusIcon setHighlightMode: YES];
+		[statusIcon setMenu: menu];
+		
+		[statusIcon retain];
+		
+
+	}
+	
+	
+}
+
+- (void) removeMenuBarIcon
+{
+	NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
+	
+	if (statusIcon)
+		[statusBar removeStatusItem: statusIcon];
+
+	[statusIcon release];
+	statusIcon = nil;
+}
+
 -(void)applicationDidFinishLaunching:(NSNotification *)aNotification 
 {
 #ifdef DEBUG
@@ -241,29 +290,9 @@ OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,	 voi
 	if (keycode >= 0 && modifiers >= 0)
 		[self enregisterHotkeyWithKeyCode:keycode andModifiers:modifiers];
 	
+	statusIcon = nil;
+	[self createMenuBarIcon];
 
-
-	NSMenu *menu = [[[NSMenu alloc] initWithTitle:@"menu title"] autorelease];
-
-	NSMenuItem *menuItem = [[[NSMenuItem alloc] initWithTitle:@"Open Search" action:@selector(reopenWindowByMenu:) keyEquivalent:[NSString string]] autorelease];
-	[menu addItem: menuItem];
-	menuItem = [[[NSMenuItem alloc] initWithTitle:@"Preferences" action:@selector(openPreferences:) keyEquivalent:[NSString string]] autorelease];
-	[menu addItem: menuItem];
-	[menu addItem:[NSMenuItem separatorItem]];
-
-	[menu addItemWithTitle:@"Quit" action:@selector(quitAppByMenu:) keyEquivalent:[NSString string]];
-	
-	
-	NSStatusItem *statusItem;
-	NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
-
-	statusItem = [statusBar statusItemWithLength: 24.0f];
-	[statusItem setTitle:@"s!"];
-	[statusItem setEnabled: YES];
-	[statusItem setHighlightMode: YES];
-	[statusItem setMenu: menu];
-	
-	[statusItem retain];
 	
 #ifdef DEBUG
 	SUUpdater *upd = [SUUpdater sharedUpdater];
@@ -384,6 +413,8 @@ OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,	 voi
 	
 	[searchWindowController highlightModifier: 0];
 
+	[[searchWindowController searchField] becomeFirstResponder];
+	
 	//don't show the window when
 	//the app just started
 	if (didJustStart == YES)

@@ -48,6 +48,8 @@
 - (IBAction) enterMenuChanged : (id) sender;
 - (IBAction) aLangButtonChanged : (id) sender;
 
+- (IBAction) menuBarIconSettingsChanged: (id) sender;
+
 - (IBAction) shouldAddToLoginItemsBoxChanged : (id) sender;
 
 - (void) setupKeyBindingsView;
