@@ -29,7 +29,7 @@
 	<key>SUFeedURL</key>
 	<string>http://www.fluxforge.com/appcasts/search-it</string>
 	<key>SUEnableSystemProfiling</key>
-	<string>YES</string>
+	<true/>
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
 </dict>
