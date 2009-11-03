@@ -16,6 +16,20 @@
 			<string>http://developer.apple.com/search.php?q=$keyword</string>
 		</dict>
 	</dict>
+	<key>iTunes</key>
+	<dict>
+		<key>name</key>
+		<string>iTunes</string>
+		<key>url</key>
+		<string>searchItunes://</string>
+		<key>defaultlocale</key>
+		<string>english</string>
+		<key>locales</key>
+		<dict>
+			<key>english</key>
+			<string>searchitunes://$keyword</string>
+		</dict>
+	</dict>
 	<key>Bing</key>
 	<dict>
 		<key>name</key>

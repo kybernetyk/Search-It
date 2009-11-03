@@ -8,6 +8,7 @@
 
 #import "Engines.h"
 #import "AppDelegate.h"
+#import "iTunes.h"
 
 @implementation Engines
 @synthesize engines;
@@ -199,8 +200,46 @@ static Engines *sharedEngines = nil;
 	return ret;
 }
 
+- (void) searchItunes: (NSString *) keyword
+{
+	keyword = [keyword stringByReplacingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+	NSLog(@"searching iTunes for %@",keyword);
+	
+	iTunesApplication *iTunes = [SBApplication applicationWithBundleIdentifier:@"com.apple.iTunes"];
+	iTunesPlaylist *playList = [iTunes currentPlaylist];
+	
+	//NSLog(@"%@",[[playList tracks] get]);
+	//[playList searchFor: keyword only: iTunesESrAAll];
+	
+	NSArray *tracks = [[iTunes currentPlaylist] searchFor: keyword only: iTunesESrAAll];
+	if ([tracks count] > 0)
+	{
+		[[tracks objectAtIndex: 0] playOnce: NO];		
+//		[[tracks objectAtIndex: 0] reveal];
+		[NSApp hide: self];
+	}
+	else 
+	{
+		NSLog(@"the track %@ was not found in iTunes!",keyword);
+		NSBeep();
+	}
+
+
+	
+	NSLog(@"%@",tracks);
+
+}
+
 - (void) performSearchForKeyword: (NSString *) keyword withEngine: (NSString *) engine andLocale: (NSString *) locale
 {
+	if ([engine isEqualToString: @"iTunes"])
+	{
+		[self searchItunes: keyword];
+		return;
+	}
+	
+
+	
 	NSString *searchTemplate = [self searchURLForEngine: engine andLocale: locale];
 	if (searchTemplate == nil)
 		return;
