@@ -3,6 +3,7 @@
 #import "SearchItPrefsWindowController.h"
 #import <Sparkle/Sparkle.h>
 #import "Engines.h"
+#import "PFMoveApplication.h"
 
 @implementation AppDelegate
 @synthesize isWindowOpen, shouldShowWindow, searchWindowController, lastSearchTerm, prefsWindowController;
@@ -69,6 +70,9 @@
 #ifdef DEBUG
 	NSLog(@"init");
 #endif
+	
+	PFMoveToApplicationsFolderIfNecessary();
+	
 //	[self parseEnginesFile];
 	
 	//Engines *e = [Engines sharedInstance];
