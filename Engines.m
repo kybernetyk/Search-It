@@ -42,12 +42,6 @@ static Engines *sharedEngines = nil;
 }
 
 
--(void)dealloc 
-{
-    [engines release];
-	
-	[super dealloc];
-}
 
 -(id)copyWithZone:(NSZone *)zone 
 {
@@ -55,33 +49,13 @@ static Engines *sharedEngines = nil;
 }
 
 
--(id)retain 
-{
-    return self;
-}
-
-
--(unsigned)retainCount {
-    return UINT_MAX;  //denotes an object that cannot be release
-}
-
-
--(void)release 
-{
-    //do nothing    
-}
-
-
--(id)autorelease 
-{
-    return self;    
-}
 
 
 -(id)init 
 {
     self = [super init];
     sharedEngines = self;
+	me = self;
 	
     //initialize here
 	[self loadEngines];

@@ -11,11 +11,11 @@
 
 @interface SearchWindowController : NSWindowController 
 {
-	IBOutlet NSTextField *searchField;
+	IBOutlet NSTextField *__weak searchField;
 	IBOutlet NSButton *actionButton;
 }
 
-@property (readonly) NSTextField *searchField;
+@property (weak, readonly) NSTextField *searchField;
 
 - (IBAction) executeEnterSearch : (id) sender;
 - (IBAction) executeCommandEnterSearch : (id) sender;

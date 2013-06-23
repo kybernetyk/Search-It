@@ -1,9 +1,7 @@
 #import <Cocoa/Cocoa.h>
 #import <Carbon/Carbon.h>
-
-
-@class SearchWindowController;
-@class SearchItPrefsWindowController;
+#import "SearchWindowController.h"
+#import "SearchItPrefsWindowController.h"
 
 @interface AppDelegate : NSObject 
 {
@@ -27,9 +25,9 @@
 @property (readwrite, assign) BOOL isWindowOpen;
 @property (readwrite, assign) BOOL shouldShowWindow;
 
-@property (readwrite, retain) NSString *lastSearchTerm;
-@property (readwrite, retain) SearchWindowController *searchWindowController;
-@property (retain) SearchItPrefsWindowController *prefsWindowController;
+@property (readwrite, strong) NSString *lastSearchTerm;
+@property (readwrite, strong) SearchWindowController *searchWindowController;
+@property (strong) SearchItPrefsWindowController *prefsWindowController;
 
 - (void) enregisterHotkeyWithKeyCode : (NSInteger) keyCode andModifiers: (NSInteger) modifiers;
 - (void) unregisterHotkey;

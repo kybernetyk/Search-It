@@ -15,8 +15,8 @@
 #endif
 	NSMutableArray*        loginItems;
 	
-    loginItems = (NSMutableArray*) CFPreferencesCopyValue((CFStringRef)  @"AutoLaunchedApplicationDictionary", (CFStringRef) @"loginwindow",							  kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
-    loginItems = [[loginItems autorelease] mutableCopy];
+    loginItems = (NSMutableArray*) CFBridgingRelease(CFPreferencesCopyValue((CFStringRef)  @"AutoLaunchedApplicationDictionary", (CFStringRef) @"loginwindow",							  kCFPreferencesCurrentUser, kCFPreferencesAnyHost));
+    loginItems = [loginItems mutableCopy];
 	
 	
 	NSMutableDictionary * myDict=[[NSMutableDictionary alloc]init];
@@ -29,11 +29,9 @@
 	
     //Do you stuff on "loginItems" array here
 	
-    CFPreferencesSetValue((CFStringRef)  @"AutoLaunchedApplicationDictionary", loginItems, (CFStringRef) @"loginwindow", kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
+    CFPreferencesSetValue((CFStringRef)  @"AutoLaunchedApplicationDictionary", (__bridge CFPropertyListRef)(loginItems), (CFStringRef) @"loginwindow", kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
     CFPreferencesSynchronize((CFStringRef) @"loginwindow", kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
 	
-    [loginItems release];
-	[myDict release];
 }
 
 -(void)removeAppFromLoginItems
@@ -45,8 +43,8 @@
 	
 	NSMutableArray*        loginItems;
 	
-    loginItems = (NSMutableArray*) CFPreferencesCopyValue((CFStringRef)  @"AutoLaunchedApplicationDictionary", (CFStringRef) @"loginwindow",							  kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
-    loginItems = [[loginItems autorelease] mutableCopy];
+    loginItems = (NSMutableArray*) CFBridgingRelease(CFPreferencesCopyValue((CFStringRef)  @"AutoLaunchedApplicationDictionary", (CFStringRef) @"loginwindow",							  kCFPreferencesCurrentUser, kCFPreferencesAnyHost));
+    loginItems = [loginItems mutableCopy];
 	
 	
 	NSMutableDictionary * myDict=[[NSMutableDictionary alloc]init];
@@ -58,10 +56,9 @@
 	
     //Do you stuff on "loginItems" array here
 	
-    CFPreferencesSetValue((CFStringRef)  @"AutoLaunchedApplicationDictionary", loginItems, (CFStringRef) @"loginwindow", kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
+    CFPreferencesSetValue((CFStringRef)  @"AutoLaunchedApplicationDictionary", (__bridge CFPropertyListRef)(loginItems), (CFStringRef) @"loginwindow", kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
     CFPreferencesSynchronize((CFStringRef) @"loginwindow", kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
 	
-    [loginItems release];
 }
 
 
@@ -176,7 +173,7 @@ OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,	 voi
 	else
 	{	
 		[NSApp activateIgnoringOtherApps: YES];
-		AppDelegate *d = (AppDelegate *)userData;
+		AppDelegate *d = (__bridge AppDelegate *)userData;
 		[d setShouldShowWindow: YES];
 		
 	}
@@ -202,7 +199,7 @@ OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,	 voi
 	eventType.eventKind=kEventHotKeyPressed;
 	
 	//register hotkey handler
-	InstallApplicationEventHandler(&MyHotKeyHandler,1,&eventType,self,NULL);
+	InstallApplicationEventHandler(&MyHotKeyHandler,1,&eventType,(__bridge void*)self,NULL);
 	
 	//register hotkey (option + tab)
 	gMyHotKeyID.signature='htk1';
@@ -225,11 +222,11 @@ OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,	 voi
 	
 	if (addToMenubar)
 	{
-		NSMenu *menu = [[[NSMenu alloc] initWithTitle:@"menu title"] autorelease];
+		NSMenu *menu = [[NSMenu alloc] initWithTitle:@"menu title"];
 		
-		NSMenuItem *menuItem = [[[NSMenuItem alloc] initWithTitle:@"Open Search" action:@selector(reopenWindowByMenu:) keyEquivalent:[NSString string]] autorelease];
+		NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Open Search" action:@selector(reopenWindowByMenu:) keyEquivalent:[NSString string]];
 		[menu addItem: menuItem];
-		menuItem = [[[NSMenuItem alloc] initWithTitle:@"Preferences" action:@selector(openPreferences:) keyEquivalent:[NSString string]] autorelease];
+		menuItem = [[NSMenuItem alloc] initWithTitle:@"Preferences" action:@selector(openPreferences:) keyEquivalent:[NSString string]];
 		[menu addItem: menuItem];
 		[menu addItem:[NSMenuItem separatorItem]];
 		
@@ -245,7 +242,6 @@ OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,	 voi
 		[statusIcon setHighlightMode: YES];
 		[statusIcon setMenu: menu];
 		
-		[statusIcon retain];
 		
 
 	}
@@ -260,7 +256,6 @@ OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,	 voi
 	if (statusIcon)
 		[statusBar removeStatusItem: statusIcon];
 
-	[statusIcon release];
 	statusIcon = nil;
 }
 
@@ -341,11 +336,7 @@ OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,	 voi
 	if (prefsWindowController != nil)
 	{	
 
-#ifdef DEBUG
-		NSLog(@"prefsWindowController retaincount: %i",[prefsWindowController retainCount]);
-#endif
 		
-		[prefsWindowController release];
 		prefsWindowController = nil;
 	}
 	
@@ -399,7 +390,6 @@ OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,	 voi
 #ifdef DEBUG
 		NSLog(@"releaseing controller");
 #endif
-		[searchWindowController release];		
 	}
 	
 	searchWindowController = [[SearchWindowController alloc] initWithWindowNibName:@"SearchWindow"];

@@ -74,8 +74,7 @@ NSInteger alphabeticSort(id string1, id string2, void *reverse)
 
 - (NSMenu *)createMenuWithArray: (NSArray *) anArray
 {
-	NSMenu *menu = [[[NSMenu alloc] init] autorelease];
-	[menu retain];
+	NSMenu *menu = [[NSMenu alloc] init];
 	
 	//NSArray *arr = [NSArray arrayWithObjects:@"com",@"co.uk",@"de",@"fr",@"es",@"pl",nil];
 #ifdef DEBUG
@@ -90,9 +89,8 @@ NSInteger alphabeticSort(id string1, id string2, void *reverse)
 		NSLog(@"adding: %@",title);
 #endif
 		
-		NSMenuItem *item = [[[NSMenuItem alloc] init] autorelease];
+		NSMenuItem *item = [[NSMenuItem alloc] init];
 		[item setTitle: title];
-		[item retain];
 		
 		[menu addItem: item];
 	}

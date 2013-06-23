@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>DuckDuckGo</key>
+	<dict>
+		<key>name</key>
+		<string>DuckDuckGo</string>
+		<key>url</key>
+		<string>https://duckduckgo.com</string>
+		<key>defaultlocale</key>
+		<string>English</string>
+		<key>locales</key>
+		<dict>
+			<key>English</key>
+			<string>https://duckduckgo.com/?q=$keyword</string>
+		</dict>
+	</dict>
 	<key>Apple Developer Connection</key>
 	<dict>
 		<key>name</key>

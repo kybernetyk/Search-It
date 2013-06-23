@@ -14,11 +14,12 @@
 		03CEFCB20FDEB8AF00BACD81 /* gear_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CEFCB10FDEB8AF00BACD81 /* gear_icon.png */; };
 		03E77C080F78FCFC00E08BE1 /* MainPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E77C070F78FCFC00E08BE1 /* MainPanel.m */; };
 		03F7AD9810C48B4100A7EB1E /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7AD9710C48B4100A7EB1E /* PFMoveApplication.m */; };
-		03F7AD9B10C48B8C00A7EB1E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F7AD9A10C48B8C00A7EB1E /* Security.framework */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		C46A913D177750BC004AA0C8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46A913C177750BC004AA0C8 /* Security.framework */; };
+		C46A913F1777517A004AA0C8 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46A913E1777517A004AA0C8 /* Carbon.framework */; };
 		EF1500060E5EC4220067BCD3 /* Advanced.png in Resources */ = {isa = PBXBuildFile; fileRef = EF15FFFE0E5EC4220067BCD3 /* Advanced.png */; };
 		EF1500070E5EC4220067BCD3 /* DBPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1500000E5EC4220067BCD3 /* DBPrefsWindowController.m */; };
 		EF1500080E5EC4220067BCD3 /* General.png in Resources */ = {isa = PBXBuildFile; fileRef = EF1500010E5EC4220067BCD3 /* General.png */; };
@@ -30,7 +31,6 @@
 		EF81474F0E5F375C00DA3BC2 /* KeyWellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF81474E0E5F375C00DA3BC2 /* KeyWellButton.m */; };
 		EFA902780E5CDB4D00CA129A /* SearchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA902770E5CDB4D00CA129A /* SearchWindowController.m */; };
 		EFA9027B0E5CDC4500CA129A /* SearchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA9027A0E5CDC4500CA129A /* SearchWindow.xib */; };
-		EFA903040E5CE27500CA129A /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA903030E5CE27500CA129A /* Carbon.framework */; };
 		EFA9032E0E5CE46B00CA129A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA9032D0E5CE46B00CA129A /* AppDelegate.m */; };
 		EFAC0C4E0EE438DB004F88EA /* engines.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFAC0C4D0EE438DB004F88EA /* engines.plist */; };
 		EFAC0D1F0EE47EDE004F88EA /* Engines.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC0D1E0EE47EDE004F88EA /* Engines.m */; };
@@ -70,6 +70,8 @@
 		32CA4F630368D1EE00C91783 /* Search It_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Search It_Prefix.pch"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Search It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Search It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C46A913C177750BC004AA0C8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C46A913E1777517A004AA0C8 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
 		EF1500000E5EC4220067BCD3 /* DBPrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPrefsWindowController.m; sourceTree = "<group>"; };
 		EF1500010E5EC4220067BCD3 /* General.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = General.png; sourceTree = "<group>"; };
 		EF1500020E5EC4220067BCD3 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
@@ -98,11 +100,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46A913F1777517A004AA0C8 /* Carbon.framework in Frameworks */,
+				C46A913D177750BC004AA0C8 /* Security.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				EFA903040E5CE27500CA129A /* Carbon.framework in Frameworks */,
 				03744297109F1C7A00B3B221 /* Sparkle.framework in Frameworks */,
 				03A14B7B10A0AA82002BF9B1 /* ScriptingBridge.framework in Frameworks */,
-				03F7AD9B10C48B8C00A7EB1E /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +209,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C46A913E1777517A004AA0C8 /* Carbon.framework */,
+				C46A913C177750BC004AA0C8 /* Security.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -242,7 +246,11 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Search It" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Search It */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -317,7 +325,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -331,8 +340,10 @@
 				GCC_PREFIX_HEADER = "Search It_Prefix.pch";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "Search It";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -340,7 +351,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -351,8 +363,10 @@
 				GCC_PREFIX_HEADER = "Search It_Prefix.pch";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "Search It";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

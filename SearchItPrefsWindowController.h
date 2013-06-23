@@ -8,8 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "DBPrefsWindowController.h"
-
-@class KeyWellButton;
+#import "KeyWellButton.h"
 
 @interface SearchItPrefsWindowController : DBPrefsWindowController 
 {

@@ -61,7 +61,7 @@ void PFMoveToApplicationsFolderIfNecessary()
 	BOOL needAuthorization = ([fm isWritableFileAtPath:applicationsDirectory] == NO);
 
 	// Setup the alert
-	NSAlert *alert = [[[NSAlert alloc] init] autorelease];
+	NSAlert *alert = [[NSAlert alloc] init];
 	{
 		NSString *informativeText = nil;
 
@@ -171,7 +171,7 @@ void PFMoveToApplicationsFolderIfNecessary()
 fail:
 	{
 		// Show failure message
-		NSAlert *alert = [[[NSAlert alloc] init] autorelease];
+		NSAlert *alert = [[NSAlert alloc] init];
 		[alert setMessageText:NSLocalizedStringFromTable(@"Could not move to Applications folder", @"MoveApplication", nil)];
 		[alert runModal];
 	}

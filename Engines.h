@@ -14,10 +14,11 @@
 @interface Engines : NSObject 
 {
 	NSDictionary *engines;
+	Engines *me;
 	
 }
 
-@property (readonly, assign) NSDictionary *engines;
+@property (readonly) NSDictionary *engines;
 
 - (void) loadEngines;
 
